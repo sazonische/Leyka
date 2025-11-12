@@ -517,7 +517,7 @@ abstract class Leyka_Gateway extends Leyka_Singleton {
         } else if(is_wp_error($recurring_cancelling_result)) {
             die(wp_kses_post($recurring_cancelling_result->get_error_message()));
         } else {
-            die( sprintf(esc_html__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="%s" target="_blank">website tech. support</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), esc_attr(leyka_get_website_tech_support_email())) );
+            die( sprintf(esc_html__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="mailto:%s" target="_blank">website tech. support</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), esc_attr(leyka_get_website_tech_support_email())) );
         }
 
     }

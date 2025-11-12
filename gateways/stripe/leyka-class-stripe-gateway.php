@@ -474,7 +474,7 @@ class Leyka_Stripe_Gateway extends Leyka_Gateway {
 
         if( !$donation->stripe_subscription_id ) {
             /* translators: 1: Donation id, 2: Support email. */
-            return new WP_Error('stripe_no_subscription_id', sprintf(__('<strong>Error:</strong> unknown Subscription ID for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="%2$s" target="_blank">website tech. support</a>.<br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email()));
+            return new WP_Error('stripe_no_subscription_id', sprintf(__('<strong>Error:</strong> unknown Subscription ID for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="mailto:%2$s" target="_blank">website tech. support</a>.<br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email()));
         }
 
         require_once LEYKA_PLUGIN_DIR.'gateways/stripe/lib/init.php';
@@ -513,7 +513,7 @@ class Leyka_Stripe_Gateway extends Leyka_Gateway {
             die(wp_kses_post($recurring_cancelling_result->get_error_message()));
         } else {
             /* translators: %s: Support email. */
-            die( wp_kses_post( sprintf(__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="%s" target="_blank">website tech. support</a>.<br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email()) ) );
+            die( wp_kses_post( sprintf(__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="mailto:%s" target="_blank">website tech. support</a>.<br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email()) ) );
         }
 
     }

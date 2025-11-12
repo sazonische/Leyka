@@ -1549,7 +1549,7 @@ class Leyka_Paypal_Gateway extends Leyka_Gateway {
             return new WP_Error(
                 'paypal_no_init_recurring_found',
                 /* translators: 1: Donation id, 2: Support email, 3: Cancel link. */
-                sprintf(__('<strong>Error:</strong> cannot find recurring subscription data for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="%2$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%3$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email(), $recurring_manual_cancel_link)
+                sprintf(__('<strong>Error:</strong> cannot find recurring subscription data for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="mailto:%2$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%3$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email(), $recurring_manual_cancel_link)
             );
         }
 
@@ -1568,7 +1568,7 @@ class Leyka_Paypal_Gateway extends Leyka_Gateway {
             return new WP_Error(
                 'paypal_recurring_cancelling_error',
                 /* translators: 1:: Support email, 2: Cancel link. */
-                sprintf(__('<strong>Error:</strong> we cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email(), $recurring_manual_cancel_link)
+                sprintf(__('<strong>Error:</strong> we cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="mailto:%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email(), $recurring_manual_cancel_link)
             );
         }
 
@@ -1591,7 +1591,7 @@ class Leyka_Paypal_Gateway extends Leyka_Gateway {
             die( wp_kses_post( $recurring_cancelling_result->get_error_message() ) );
         } else {
             die( wp_kses_post( /* translators: 1: Support email, 2: Cancel link. */
-                sprintf(__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email(), $recurring_manual_cancel_link) ) );
+                sprintf(__('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="mailto:%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), leyka_get_website_tech_support_email(), $recurring_manual_cancel_link) ) );
         }
 
     }

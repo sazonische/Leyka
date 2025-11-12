@@ -561,7 +561,7 @@ class Leyka_CP_Gateway extends Leyka_Gateway {
 
         if( !$donation->cp_recurring_id ) {
             /* translators: 1: Id, 2: Email, 3: Cancel link. */
-            return new WP_Error('cp_no_subscription_id', sprintf(__('<strong>Error:</strong> unknown Subscription ID for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="%2$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%3$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email(), $recurring_manual_cancel_link));
+            return new WP_Error('cp_no_subscription_id', sprintf(__('<strong>Error:</strong> unknown Subscription ID for donation #%1$d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href="mailto:%2$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%3$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka'), $donation->id, leyka_get_website_tech_support_email(), $recurring_manual_cancel_link));
         }
 
         $response = wp_remote_post('https://api.cloudpayments.ru/subscriptions/cancel', [
@@ -616,7 +616,7 @@ class Leyka_CP_Gateway extends Leyka_Gateway {
             die( wp_kses_post( $recurring_cancelling_result->get_error_message() ) );
         } else {
             /* translators: 1: Email, 2: Cancel link. */
-            die( sprintf( wp_kses_post( __('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka') ), esc_attr( leyka_get_website_tech_support_email() ), esc_url( $recurring_manual_cancel_link) ) );
+            die( sprintf( wp_kses_post( __('Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href="mailto:%1$s" target="_blank">website tech. support</a>.<br>Also you may <a href="%2$s">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience.', 'leyka') ), esc_attr( leyka_get_website_tech_support_email() ), esc_url( $recurring_manual_cancel_link) ) );
         }
 
     }

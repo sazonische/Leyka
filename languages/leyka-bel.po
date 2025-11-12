@@ -1300,14 +1300,14 @@ msgstr "Кампания #%d - рекуррентные пожертвовани
 
 #: gateways/paypal/leyka-class-paypal-gateway.php:1522
 #: gateways/cp/leyka-class-cp-gateway.php:494
-msgid "Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href=\"%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
-msgstr "Ошибка при отмене подписки на рекуррентные пожертвования.<br><br>Пожалуйста, сообщите об этом <a href=\"%s\" target=\"_blank\">в техническую поддержку сайта</a>.<br>Кроме того, вы можете <a href=\"%s\">отменить вашу рекуррентную подписку вручную</a>.<br><br>Приносим извинения за неудобство."
+msgid "Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
+msgstr "Ошибка при отмене подписки на рекуррентные пожертвования.<br><br>Пожалуйста, сообщите об этом <a href=\"mailto:%s\" target=\"_blank\">в техническую поддержку сайта</a>.<br>Кроме того, вы можете <a href=\"%s\">отменить вашу рекуррентную подписку вручную</a>.<br><br>Приносим извинения за неудобство."
 
 #: gateways/rbk/leyka-class-rbk-gateway.php:404
 #: gateways/yandex/leyka-class-yandex-gateway.php:611
 #: gateways/liqpay/leyka-class-liqpay-gateway.php:350
-msgid "Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href=\"%s\" target=\"_blank\">website tech. support</a>.<br><br>We are very sorry for inconvenience."
-msgstr "Ошибка при отмене подписки на рекуррентные пожертвования. <br><br>Пожалуйста, сообщите об этом <a href=\"%s\" target=\"_blank\">в техническую поддержку сайта</a>.<br><br>Приносим извинения за неудобство."
+msgid "Error while trying to cancel the recurring subscription.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br><br>We are very sorry for inconvenience."
+msgstr "Ошибка при отмене подписки на рекуррентные пожертвования. <br><br>Пожалуйста, сообщите об этом <a href=\"mailto:%s\" target=\"_blank\">в техническую поддержку сайта</a>.<br><br>Приносим извинения за неудобство."
 
 #: gateways/paypal/leyka-class-paypal-gateway.php:1518
 #: gateways/rbk/leyka-class-rbk-gateway.php:400
@@ -1927,8 +1927,8 @@ msgid "Recurring donations cancelling by the Donor's decision"
 msgstr "Рекуррентные пожертвования остановлены по запросу донора"
 
 #: gateways/paypal/leyka-class-paypal-gateway.php:1482
-msgid "<strong>Error:</strong> cannot find recurring subscription data for donation #%d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
-msgstr "<strong>Ошибка:</strong> не найдены данные о рекуррентной подписке для пожертвования #%d. Автоматически остановить подписку невозможно.<br><br>Пожалуйста, напишите об этом <a href=\"%s\" target=\"_blank\">в техн. поддержку сайта</a>.<br>Кроме того, вы можете <a href=\"%s\">остановить ваши рекуррентные пожертвования вручную</a>.<br><br>Приносим извинения за неудобство."
+msgid "<strong>Error:</strong> cannot find recurring subscription data for donation #%d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
+msgstr "<strong>Ошибка:</strong> не найдены данные о рекуррентной подписке для пожертвования #%d. Автоматически остановить подписку невозможно.<br><br>Пожалуйста, напишите об этом <a href=\"mailto:%s\" target=\"_blank\">в техн. поддержку сайта</a>.<br>Кроме того, вы можете <a href=\"%s\">остановить ваши рекуррентные пожертвования вручную</a>.<br><br>Приносим извинения за неудобство."
 
 #: gateways/paypal/leyka-class-paypal-gateway.php:965
 msgid "PayPal callback error: billing agreement for the recurring subscription wasn't executed."
@@ -3002,8 +3002,8 @@ msgid "yes"
 msgstr "да"
 
 #: gateways/paypal/leyka-class-paypal-gateway.php:1500
-msgid "<strong>Error:</strong> we cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
-msgstr "<strong>Ошибка:</strong> автоматическая отмена рекуррентной подписки невозможна.<br><br>Пожалуйста, сообщите об этом <a href=\"%s\" target=\"_blank\">технической поддержке сайта</a>.<br>Также вы можете отменить вашу рекуррентную подписку <a href=\"%s\">вручную</a>.<br><br>Мы приносим извинения за неудобство."
+msgid "<strong>Error:</strong> we cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
+msgstr "<strong>Ошибка:</strong> автоматическая отмена рекуррентной подписки невозможна.<br><br>Пожалуйста, сообщите об этом <a href=\"mailto:%s\" target=\"_blank\">технической поддержке сайта</a>.<br>Также вы можете отменить вашу рекуррентную подписку <a href=\"%s\">вручную</a>.<br><br>Мы приносим извинения за неудобство."
 
 #: gateways/cp/leyka-class-cp-gateway.php:460
 msgid "<strong>Error:</strong> the recurring subsciption cancelling request returned unexpected result. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
@@ -3011,8 +3011,8 @@ msgstr "<strong>Ошибка:</strong> запрос на автоматичес�
 
 #: gateways/cp/leyka-class-cp-gateway.php:444
 #: gateways/liqpay/leyka-class-liqpay-gateway.php:314
-msgid "<strong>Error:</strong> unknown Subscription ID for donation #%d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
-msgstr "<strong>Ошибка:</strong> неизвестное значение Subscription ID для пожертвования #%d. Отмена рекуррентной подписки невозможна.<br><br>Пожалуйста, сообщите об этом <a href=\"%s\" target=\"_blank\">технической поддержке сайта</a>.<br>Также вы можете отменить вашу рекуррентную подписку <a href=\"%s\">вручную</a>.<br><br>Мы приносим извинения за неудобство."
+msgid "<strong>Error:</strong> unknown Subscription ID for donation #%d. We cannot cancel the recurring subscription automatically.<br><br>Please, email abount this to the <a href=\"mailto:%s\" target=\"_blank\">website tech. support</a>.<br>Also you may <a href=\"%s\">cancel your recurring donations manually</a>.<br><br>We are very sorry for inconvenience."
+msgstr "<strong>Ошибка:</strong> неизвестное значение Subscription ID для пожертвования #%d. Отмена рекуррентной подписки невозможна.<br><br>Пожалуйста, сообщите об этом <a href=\"mailto:%s\" target=\"_blank\">технической поддержке сайта</a>.<br>Также вы можете отменить вашу рекуррентную подписку <a href=\"%s\">вручную</a>.<br><br>Мы приносим извинения за неудобство."
 
 #: templates/account/account.php:156
 msgid "You can always <a href=\"%s\">cancel your recurring donations</a>.<br>But we will struggle without your support."
